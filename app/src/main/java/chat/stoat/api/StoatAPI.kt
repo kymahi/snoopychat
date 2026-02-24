@@ -54,20 +54,20 @@ import kotlinx.serialization.json.Json
 import java.net.SocketException
 import chat.stoat.core.model.schemas.Channel as ChannelSchema
 
-private const val USE_ALPHA_API = false
+private const val USE_ALPHA_API = true
 
 val STOAT_BASE =
-    if (USE_ALPHA_API) "https://alpha.revolt.chat/api" else "https://api.stoat.chat/0.8"
+    if (USE_ALPHA_API) "https://stoat.snoopyserver.com/api" else "https://api.stoat.chat/0.8"
 const val STOAT_SUPPORT = "https://support.stoat.chat"
 const val STOAT_MARKETING = "https://stoat.chat"
 val STOAT_FILES =
-    if (USE_ALPHA_API) "https://alpha.revolt.chat/autumn" else "https://cdn.stoatusercontent.com"
+    if (USE_ALPHA_API) "https://stoat.snoopyserver.com/autumn" else "https://cdn.stoatusercontent.com"
 val STOAT_PROXY =
-    if (USE_ALPHA_API) "https://alpha.revolt.chat/january" else "https://proxy.stoatusercontent.com"
+    if (USE_ALPHA_API) "https://stoat.snoopyserver.com/january" else "https://proxy.stoatusercontent.com"
 const val STOAT_WEB_APP = "https://stoat.chat"
 const val STOAT_INVITES = "https://stt.gg"
 val STOAT_WEBSOCKET =
-    if (USE_ALPHA_API) "wss://alpha.revolt.chat/ws" else "wss://events.stoat.chat"
+    if (USE_ALPHA_API) "wss://stoat.snoopyserver.com/ws" else "wss://events.stoat.chat"
 const val STOAT_KJBOOK = "https://stoatchat.github.io/for-android"
 
 fun String.api(): String {
