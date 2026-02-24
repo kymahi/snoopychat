@@ -99,7 +99,7 @@ private fun LeadPart(windowSizeClass: WindowSizeClass) {
             Spacer(Modifier.height(64.dp))
         }
         Image(
-            painter = painterResource(R.drawable.stoat_logo_white),
+            painter = painterResource(R.drawable.snoopy_logo_white),
             contentDescription = null,
             colorFilter = ColorFilter.tint(
                 MaterialTheme.colorScheme.onBackground

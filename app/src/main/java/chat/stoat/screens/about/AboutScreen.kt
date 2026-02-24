@@ -207,7 +207,7 @@ fun AboutScreen(navController: NavController, viewModel: AboutViewModel = viewMo
                         when (viewModel.selectedTabIndex) {
                             0 -> {
                                 Image(
-                                    painter = painterResource(R.drawable.stoat_logo_white),
+                                    painter = painterResource(R.drawable.snoopy_logo_white),
                                     contentDescription = stringResource(R.string.about_full_name),
                                     colorFilter = ColorFilter.tint(LocalContentColor.current),
                                     modifier = Modifier
