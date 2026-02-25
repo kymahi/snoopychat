@@ -64,8 +64,8 @@ android {
         applicationId = "chat.kymahi.snoopychat"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = Integer.parseInt("001_003_409".replace("_", ""), 10)
-        versionName = "1.3.9a"
+        versionCode = 2
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
