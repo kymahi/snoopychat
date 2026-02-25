@@ -232,6 +232,7 @@ dependencies {
 
     implementation(libs.sentry.android)
     implementation(libs.sentry.compose.android)
+    implementation(libs.sentry.compose.android)
 
     implementation(libs.android.profileinstaller)
     implementation(libs.android.documentfile)

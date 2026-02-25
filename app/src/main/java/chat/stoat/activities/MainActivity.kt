@@ -128,6 +128,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import io.ktor.client.request.get
+import io.sentry.ScreenshotStrategyType
 import io.sentry.android.core.SentryAndroid
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
@@ -352,6 +353,9 @@ class MainActivity : AppCompatActivity() {
         SentryAndroid.init(this) { options ->
             options.dsn = BuildConfig.SENTRY_DSN
             options.release = BuildConfig.VERSION_NAME
+            options.sessionReplay.onErrorSampleRate = 1.0
+            options.sessionReplay.sessionSampleRate = 0.1
+            options.sessionReplay.screenshotStrategy = ScreenshotStrategyType.PIXEL_COPY
         }
 
         @Suppress("DEPRECATION") // We are fixing a bug in the splash screen
